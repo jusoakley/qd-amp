@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>qdAMP</title>
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  	<!-- JQuery UI-->
+  	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+  	<script
+  src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+  	<!-- P5.js -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.min.js"></script>
+  	<!-- P5 Sound -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.sound.min.js"></script>
+  	<!-- Local Files -->
+  	<script type="text/javascript" src="js/main.js"></script>
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div>
+				<img src="imgs/logo.png" id="logo">
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div id="metronome">
+			<h3>Metronome</h3>
+			<div id="metronomeControls"></div>
+		</div>
+		<div id="volume">
+			<h3>Volume</h3>
+			<div id="volumeControl">
+				<div id="volSlider"></div>
+			</div>
+		</div>
+		<section id="row">
+			<div id="activeEffects">
+
+				<!-- Overdrive -->
+				<div id="od" class="effect">
+					<h4>Overdrive</h4>
+					<div class="controls">
+						<div class="vertSlider">
+							<div id="odAmount" class="controller"></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Delay -->
+				<div id="delay" class="effect">
+					<h4>Delay</h4>
+					<div class="vertSlider">
+						<div id="delayTime" class="controller"></div>
+					</div>
+					<div class="vertSlider">
+						<div id="delayFilter" class="controller"></div>
+					</div>
+					<div class="vertSlider">
+						<div id="delayFeedback" class="controller"></div>
+					</div>
+					<div class="vertSlider">
+						<div id="delayLevel" class="controller"></div>
+					</div>
+				</div>
+
+				<!-- Reverb -->
+				<div id="reverb" class="effect">
+					<h4>Reverb</h4>
+					<div class="vertSlider">
+						<div id="reverbTime" class="controller"></div>
+					</div>
+					<div class="vertSlider">
+						<div id="reverbDecay" class="controller"></div>
+					</div>
+					<div class="vertSlider">
+						<div id="reverbLevel" class="controller"></div>
+					</div>
+					<div class="button">
+						<div id="reverbReverse"></div>
+					</div>
+				</div>
+				<!-- Envelope
+				<div id="env" class="effect"></div> -->
+
+				<!-- Oscillator -->
+				<div id="oscil" class="effect">
+					<h4>Oscillator</h4>
+					<div class="vertSlider">
+						<div id="oscilLevel" class="controller"></div>
+					</div>
+					<div class="vertSlider">
+						<div id="oscilFreq" class="controller"></div>
+					</div>
+					<div class="vertSlider">
+						<div id="oscilType" class="controller"></div>
+					</div>
+					<div class="vertSlider">
+						<div id="oscilPhase" class="controller"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			
+		</footer>
+	</main>
+</body>
+</html>
